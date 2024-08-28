@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+body{
+    background-image: linear-gradient( 280deg,black, rgb(3, 0, 91));
+    background-size:cover;
+    background-attachment: fixed;
+    
+}
+.app nav{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    padding-left: 50px;
+}
+nav .right{
+    width: 55%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+nav a{
+text-decoration: none;
+transition: all 0.9s;
+}
+nav a:hover{
+text-decoration: underline;
+}
+.app .contant{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.app .contant .left{
+    width: 50%;
+    
+display: flex;
+flex-direction: column;
+gap: 10px;
+padding-left: 10%;
+
+}
+.app .contant .left .hamo{
+    font-size: 40px;
+    margin-bottom: 15px;
+  position: relative;
+}
+.app .contant .left .hamo::after{
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    margin-left: 5px;
+    color: red;
+    animation: mohamed 4s infinite linear;
+}
+@keyframes mohamed {
+0% , 100%{
+    content: "";
+}
+10%{
+    content: "M";
+}
+20%{
+    content: "Mo";
+}
+30%{
+    content: "Moh";
+}
+40%{
+    content: "Moha";
+}
+50%{
+    content: "Moham";
+}
+60%{
+    content: "Mohame";
+}
+70%{
+    content: "Mohamed";
+}
+75%{
+    content: "Mohame";
+}
+80%{
+    content: "Moham";
+}
+85%{
+    content: "Moha";
+}
+90%{
+    content: "Moh";
+}
+93%{
+    content: "Mo";
+}
+98%{
+    content: "M";
+}
+
+
+}
+
+.app .contant .left .con{
+    width: 90%;
+    margin-bottom: 10px;
+    p{
+        font-size: 20px;
+    }
+
+}
+.app .contant .left .buttom button{
+    width: 135px;
+    height: 25px;
+    border: 0;
+    margin-right: 10px;
+    background-color: red;
+    margin-bottom: 10px;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+.app .contant .left .buttom #bu2{
+    background-color: transparent;
+    border: 2px solid white;
+}
+.app .contant .left .buttom button:hover{
+    border-radius: 13px;
+}
+.app .contant .left .links ion-icon{
+    position: relative;
+    font-size:22px;
+    border: 1px solid white;
+    padding: 7px;
+    border-radius: 50%;
+    margin-right: 10px;
+    z-index: 10;
+}
+.app .contant .left .links ion-icon::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    z-index: -1;
+    transition: all 0.9s;
+}
+.app .contant .left .links ion-icon:hover::after{
+    height: 100%;
+}
+.app .contant .iamge {
+    width: 50%;
+    padding-left: 8%;
+    position: relative;
+    margin-right: 100px;
+    transition: all 0.7s;
+    animation: monster 4.5s linear infinite;
+}
+@keyframes monster{
+    0%{
+        transform: scale(1);
+        transform: rotate(-30deg);
+    }
+50%{
+    transform: scale(0.5);
+   
+}
+    100%{
+        transform: scale(1);
+        transform: rotate(-30deg);
+    }
+}
+.app .contant .iamge:hover{
+    filter: blur(15px);
+}
+@media screen and (max-width: 750px){
+    .app .contant{
+        flex-wrap: wrap;
+        padding-top: 60px;
+        justify-content: center;
+    }
+} 
+@media screen and (max-width: 515px){
+    .app .contant{
+       align-items: center;
+       justify-content: center;
+    }
+    nav .right{
+        visibility: hidden;
+    }
+   
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
